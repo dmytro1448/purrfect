@@ -1,0 +1,10 @@
+project_id = "purrfect"
+
+[functions.api]
+verify_jwt = false
+
+[functions.bot]
+verify_jwt = false
+
+[functions.cron]
+verify_jwt = false

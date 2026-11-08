@@ -1,0 +1,61 @@
+:root {
+  /* поверхні */
+  --bg: #0b0a0d;
+  --bg-2: #131016;
+  --bg-3: #1a161d;
+  --surface: rgba(255, 240, 248, 0.045);
+  --surface-2: rgba(255, 240, 248, 0.075);
+  --surface-3: rgba(255, 240, 248, 0.11);
+  --card: linear-gradient(180deg, rgba(255, 245, 250, 0.065), rgba(255, 245, 250, 0.03));
+  --border: rgba(255, 230, 242, 0.085);
+  --border-2: rgba(255, 230, 242, 0.14);
+
+  /* текст */
+  --text: #fff5f9;
+  --text-2: rgba(255, 238, 246, 0.66);
+  --text-3: rgba(255, 238, 246, 0.4);
+
+  /* акценти */
+  --pink: #ff4fa3;
+  --pink-2: #ff8ac4;
+  --pink-3: #ffd1e6;
+  --raspberry: #d6246e;
+  --violet: #9b4dff;
+  --violet-2: #c59bff;
+  --amber: #ffc56b;
+  --mint: #6ee7b7;
+  --danger: #ff5c7a;
+  --pink-soft: rgba(255, 79, 163, 0.14);
+  --pink-soft-2: rgba(255, 79, 163, 0.24);
+  --violet-soft: rgba(155, 77, 255, 0.16);
+  --grad: linear-gradient(135deg, #ff6fb5 0%, #ff4fa3 35%, #d6246e 70%, #9b4dff 130%);
+  --grad-soft: linear-gradient(135deg, rgba(255, 111, 181, 0.22), rgba(155, 77, 255, 0.14));
+
+  /* геометрія */
+  --r-xs: 10px;
+  --r-sm: 14px;
+  --r-md: 18px;
+  --r-lg: 24px;
+  --r-xl: 30px;
+  --gap: 14px;
+  --pad: 16px;
+
+  /* тіні */
+  --shadow: 0 12px 32px -14px rgba(0, 0, 0, 0.7);
+  --glow: 0 10px 30px -8px rgba(255, 79, 163, 0.6);
+  --glow-sm: 0 6px 18px -6px rgba(255, 79, 163, 0.55);
+
+  /* типографіка */
+  --font: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Unbounded', 'Manrope', system-ui, sans-serif;
+
+  /* safe-area (Telegram + env) */
+  --tg-top: 0px;
+  --tg-bottom: 0px;
+  --safe-top: max(var(--tg-top), env(safe-area-inset-top, 0px));
+  --safe-bottom: max(var(--tg-bottom), env(safe-area-inset-bottom, 0px));
+  --tabbar-h: 74px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  color-scheme: dark;
+}
