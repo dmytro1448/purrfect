@@ -51,8 +51,13 @@ function Shell() {
   if (error && !me) return (
     <div className="center-screen">
       <Logo size={30} />
-      <p className="muted">Не вдалося підʼєднатися. Перевір інтернет.</p>
-      <Button onClick={refetch} icon="refresh">Спробувати ще</Button>
+      {error?.message === 'unauthorized' ? (<>
+        <p className="muted">Purrfect живе в Telegram. Відкрий його через бота — так ми знаємо, що це саме ти 💗</p>
+        <Button onClick={() => { location.href = 'https://t.me/purrfect300_bot' }} icon="heart">Відкрити @purrfect300_bot</Button>
+      </>) : (<>
+        <p className="muted">Не вдалося підʼєднатися. Перевір інтернет.</p>
+        <Button onClick={refetch} icon="refresh">Спробувати ще</Button>
+      </>)}
     </div>
   )
   if (!me?.couple) return <Onboarding />
